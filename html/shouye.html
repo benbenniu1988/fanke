@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/toubu.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/shouye.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/toubu.js"></script>
+    <script src="../js/banner.js"></script>
+    <script src="../js/shouye.js"></script>
+</head>
+
+<body>
+    <div class="coupon"></div>
+    <div class="qianggou"></div>
+    <div class="shangxinBox">
+        <div class="shangxinT"></div>
+        <div class="shangxinB">
+            <ul>
+                <li><img src="" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $.get({
+                url: "../server1/toubu.php",
+                dataType: "json",
+                success(data) {
+                    // console.log(data);
+                    let headerManager = new Headers(data);
+                    headerManager.init();
+                }
+            });
+            $.get({
+                url: "../server1/banner.php",
+                dataType: "json",
+                success(data) {
+                    let bannerManager = new BannerTap(data);
+                    bannerManager.init();
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

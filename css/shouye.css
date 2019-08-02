@@ -1,0 +1,144 @@
+.coupon {
+    width: 1200px;
+    margin: 0 auto;
+    height: 69px;
+    background: url(../images/coupon.jpg) no-repeat center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.qianggou {
+    margin: 0 auto;
+    width: 1200px;
+    /* height: 64px; */
+}
+
+.qianggouT {
+    background: url(../images/qianggou.jpg) no-repeat center;
+    width: 1200px;
+    height: 64px;
+    position: relative;
+}
+
+.qianggouT span {
+    position: absolute;
+    font-size: 18px;
+    line-height: 64px;
+    text-align: center;
+    color: #fff;
+}
+
+.qianggouT span:nth-child(1) {
+    right: 200px
+}
+
+.qianggouT span:nth-child(2) {
+    color: red;
+    right: 155px
+}
+
+.qianggouT span:nth-child(3) {
+    color: red;
+    right: 92px
+}
+
+.qianggouT span:nth-child(4) {
+    color: red;
+    right: 32px
+}
+
+.qianggouB {
+    width: 1200px;
+    height: 327px;
+    margin: 0 auto;
+}
+
+.qianggouB ul {
+    width: 100%;
+    height: 100%;
+}
+
+.qianggouB ul li {
+    width: 232px;
+    height: 327px;
+    margin-right: 10px;
+    float: left;
+}
+
+.qianggouB ul li:nth-child(5) {
+    margin-right: 0px;
+}
+
+.qianggouB ul li a {
+    width: 100%;
+    height: 100%;
+}
+
+.qianggouB ul li a img {
+    width: 232px;
+    height: 232px;
+    margin-bottom: 10px;
+}
+
+.qianggouB ul li a p {
+    font-size: 16px;
+    line-height: 16px;
+    color: #474747;
+}
+
+.priceBox {
+    width: 232px;
+    height: 69px;
+    position: relative;
+    overflow: hidden;
+    /* background: pink; */
+}
+
+.priceBox .price1,
+.priceBox .price2 {
+    display: block;
+    width: 100px;
+}
+
+.priceBox .price1 {
+    color: #d3d3d3;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-top: 20px;
+    line-height: 14px;
+}
+
+.priceBox .price2 {
+    float: left;
+    margin-top: 5px;
+    color: #bb2b34;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.priceBox .price3 {
+    float: right;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #474747;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.priceBox .price3 b {
+    font-size: 24px;
+    font-style: normal;
+    color: #bb2b34;
+}
+
+.shangxinBox {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.shangxinT {
+    width: 100%;
+    height: 84px;
+    background: url(../images/shangxin.jpg) no-repeat center;
+}

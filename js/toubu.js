@@ -1,15 +1,13 @@
-$(function () {
-    // console.log("aa");
-
-    $.get({
-        url: "../server1/toubu.php",
-        dataType: "json",
-        success(res) {
-            // console.log(res);
-            let headerManager = new Headers(res);
-            headerManager.init();
-        }
-    });
+// $(function () {
+        // $.get({
+    //     url: "../server1/toubu.php",
+    //     dataType: "json",
+    //     success(res) {
+    //         // console.log(res);
+    //         let headerManager = new Headers(res);
+    //         headerManager.init();
+    //     }
+    // });
 
     class Headers {
         constructor(data) {
@@ -21,7 +19,6 @@ $(function () {
             this.addEventMouseenter();
         }
         creatHtml() {
-            // console.log(this.data);
             let olis1;
             let html = "";
             let htmlA = $("<div></div>").addClass("header");
@@ -29,12 +26,10 @@ $(function () {
 
             this.data.forEach((items1) => {
                 olis1 = $("<li></li>").html($("<a href='#'></a>").html(items1.nav1)).attr("data-class", `${items1.nav3}`);
-
-                // console.log(olis1.attr("data-class"));
                 if (olis1.attr("data-class") == "new") {
-                    olis1.css("background", "url(../images/new.png) no-repeat top right");
+                    olis1.css("background", "url(../images/new.png) no-repeat 64px 17px");
                 } else if (olis1.attr("data-class") == "hot") {
-                    olis1.css("background", "url(../images/hot.png) no-repeat top right");
+                    olis1.css("background", "url(../images/hot.png) no-repeat 66px 17px");
                 } else {
                     olis1.css("background", "none");
                 };
@@ -92,13 +87,12 @@ $(function () {
                         </div>`;
                 htmlA.html(html);
             });
-            $("body").append($("<div></div>").addClass("header").html(html));
+
+            $("body").prepend($("<div></div>").addClass("header").html(html));
             $(".headerNav").append(oUl1);
         }
         addEventMouseenter() {
-            // console.log(this.ul.children().index());
             $(".nav1").on("mouseenter", "li", function () {
-                // $(this).addClass("cur").siblings().removeClass("cur");
                 $(this).children(".nav2").slideDown().parent().siblings().children(".nav2").slideUp().stop();
 
             });
@@ -111,5 +105,5 @@ $(function () {
                 $(this).children().removeClass("active");
             })
         }
-    }
-})
+    };
+// })

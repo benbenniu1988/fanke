@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.registe {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.registe .header {
+    margin-top: 10px;
+    height: 58px;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+.registe .header a {
+    display: inline-block;
+    width: 187px;
+    height: 48px;
+    background: url(../images/logo_new.jpg) no-repeat center;
+}
+
+.registe .main {
+    margin-top: 45px;
+    width: 100%;
+}
+
+.main h1 {
+    height: 35px;
+    width: 415px;
+    float: right;
+    line-height: 35px;
+    margin: 0 100px 0 0;
+    border-bottom: 2px solid #b81e20;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #a2a2a2;
+    font-weight: normal;
+}
+
+.main h1 span {
+    font-size: 14px;
+    float: right;
+}
+
+.main h1 span a {
+    color: #b52024;
+    margin: 0 0 0 3px;
+}
+
+.mainL {
+    width: 465px;
+    height: 500px;
+    float: left;
+    margin: 0 0 0 130px;
+}
+
+.mainL img {
+    width: 465px;
+    height: 352px;
+}
+
+.mainR {
+    float: right;
+    width: 415px;
+    height: 419px;
+    background: pink;
+    margin-right: 100px;
+}

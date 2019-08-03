@@ -11,7 +11,9 @@
 
 class BannerTap {
     constructor(data) {
-        this.data = data;
+        this.data = [
+            "lunbo1.jpg", "lunbo2.jpg", "lunbo3.jpg", "lunbo4.jpg", "lunbo5.jpg", "lunbo6.jpg", "lunbo7.jpg"
+        ];
         this.left = null;
         this.right = null;
         this.dropBoxT = null;
@@ -46,6 +48,7 @@ class BannerTap {
         content.append(imgBox).append(btnBox).append(dropBox);
         banner.append(content);
         $("body").prepend(banner);
+
         this.left = leftBtn;
         this.right = rightBtn;
         this.dropBoxT = dropBox;

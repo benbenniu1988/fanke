@@ -1,121 +1,403 @@
 [{
+    "id": "0",
+    "src": "qianggou1.jpg",
+    "type": "抢购专场",
+    "title": "T恤 山鸟叔 深秋 白色",
+    "price1": "118",
+    "price2": "18",
+    "price3": "9"
+}, {
+    "id": "1",
+    "src": "qianggou2.jpg",
+    "type": "抢购专场",
+    "title": "T恤 山鸟叔 吹两朵云 白色",
+    "price1": "118",
+    "price2": "18",
+    "price3": "9"
+}, {
+    "id": "2",
+    "src": "qianggou3.jpg",
+    "type": "抢购专场",
+    "title": "T恤 山鸟叔 人类退化史 黑色",
+    "price1": "118",
+    "price2": "18",
+    "price3": "9"
+}, {
+    "id": "3",
+    "src": "qianggou4.jpg",
+    "type": "抢购专场",
+    "title": "T恤 李子健 月亮猫 白色",
+    "price1": "118",
+    "price2": "18",
+    "price3": "9"
+}, {
+    "id": "4",
+    "src": "qianggou5.jpg",
+    "type": "抢购专场",
+    "title": "童装卫衣 圆领 熊本熊 S9 浅花灰",
+    "price1": "278",
+    "price2": "118",
+    "price3": "59"
+}, {
+    "id": "5",
+    "type": "上新",
     "title": "T恤 张广先 福到 ",
-    "src": "https://i1.vanclimg.com/cms/20190710/xpg_03.jpg"
+    "price1": "58.00",
+    "src": "sx1.jpg"
 }, {
+    "id": "6",
+    "type": "上新",
     "title": "T恤 欧飞鸿 我爱你 ",
-    "src": "https://i1.vanclimg.com/cms/20190710/xpg_05.jpg"
+    "price1": "58.00",
+    "src": "sx2.jpg"
 }, {
+    "id": "7",
+    "type": "上新",
     "title": "T恤 崔海军 黑猫7 ",
-    "src": "https://i2.vanclimg.com/cms/20190722/x.jpg"
+    "price1": "58.00",
+    "src": "sx3.jpg"
 }, {
+    "id": "8",
+    "type": "上新",
     "title": "T恤 全棉舒适 素色基础 Pro",
-    "src": "http://i3.vanclimg.com/cms/20190704/xx.jpg"
+    "price1": "58.00",
+    "src": "sx4.jpg"
 }, {
+    "id": "9",
+    "type": "上新",
     "title": "T恤 水柔棉 50支 2.0 圆领 男款",
-    "src": "https://i2.vanclimg.com/cms/20190731/gg.jpg"
+    "price1": "198.00",
+    "src": "sx5.jpg"
 }, {
+    "id": "10",
+    "type": "上新",
     "title": "T恤 光变色 夏威夷白色",
-    "src": "https://i1.vanclimg.com/cms/20190711/xp1.jpg"
+    "price1": "58.00",
+    "src": "sx6.jpg"
 }, {
+    "id": "11",
+    "type": "上新",
     "title": "T恤 熊本熊 早起白色",
-    "src": "https://i2.vanclimg.com/cms/20190711/xp2.jpg"
+    "price1": "58.00",
+    "src": "sx7.jpg"
 }, {
+    "id": "12",
+    "type": "上新",
     "title": "T恤 熊本熊 字母白色",
-    "src": "https://i1.vanclimg.com/cms/20190711/xp3.jpg"
+    "price1": "58.00",
+    "src": "sx8.jpg"
 }, {
+    "id": "13",
+    "type": "上新",
     "title": "水洗POLO衫 柔软磨毛平纹 男款",
-    "src": "https://i1.vanclimg.com/cms/20190717/xp1.jpg"
+    "price1": "128.00",
+    "src": "sx9.jpg"
 }, {
+    "id": "14",
+    "type": "上新",
     "title": "凡客衬衫 牛津纺 领尖扣 短袖 男款",
-    "src": "https://i1.vanclimg.com/cms/20190717/xp3.jpg"
+    "price1": "78.00",
+    "src": "sx10.jpg"
 }, {
+    "id": "15",
+    "type": "上新",
     "title": "衬衫 麻棉 小方领 男款 ",
-    "src": "https://i2.vanclimg.com/cms/20190717/xp2.jpg"
+    "price1": "138.00",
+    "src": "sx11.jpg"
 }, {
+    "id": "16",
+    "type": "上新",
     "title": "凡客休闲户外凉鞋-男款 黑/蓝",
-    "src": "https://i2.vanclimg.com/cms/20190710/4.jpg"
+    "price1": "278.00",
+    "src": "sx12.jpg"
 }, {
+    "id": "17",
+    "type": "明星商品",
     "title": "凡客衬衫 牛津纺 领尖扣 短袖 男款",
-    "src": "https://i1.vanclimg.com/cms/20190716/mxzj_09.jpg"
+    "price1": "398.00",
+    "price1": "138.00",
+    "price1": "69.00",
+    "src": "mx1.jpg"
 }, {
+    "id": "18",
+    "type": "明星商品",
     "title": "凡客衬衫 牛津纺 领尖扣 男款",
-    "src": "https://i1.vanclimg.com/cms/20190716/mxzj_10.jpg"
+    "price1": "198.00",
+    "price1": "138.00",
+    "price1": "69.00",
+    "src": "mx2.jpg"
 }, {
+    "id": "19",
+    "type": "明星商品",
     "title": "凡客衬衫 水洗棉 小方领 短袖 男款",
-    "src": "https://i1.vanclimg.com/cms/20190716/mxzj_11.jpg"
+    "price1": "398.00",
+    "price1": "138.00",
+    "price1": "69.00",
+    "src": "mx3.jpg"
 }, {
-    "title": "凡客衬衫 水洗棉 小方领 长袖 男款 ",
-    "src": "https://i1.vanclimg.com/cms/20190717/mxzj_12gg.jpg"
+    "id": "20",
+    "type": "明星商品",
+    "title": "凡客衬衫 水洗棉 小方领 长袖 男款",
+    "price1": "398.00",
+    "price1": "138.00",
+    "price1": "69.00",
+    "src": "mx4.jpg"
 }, {
-    "title": "凡客衬衫 吉国武 免烫 温莎领 4.0 ",
-    "src": "https://i1.vanclimg.com/cms/20190716/mxzj_14.jpg"
+    "id": "21",
+    "type": "明星商品",
+    "title": "凡客衬衫 吉国武 免烫 温莎领",
+    "price1": "398.00",
+    "price1": "338.00",
+    "price1": "169.00",
+    "src": "mx5.jpg"
 }, {
+    "id": "22",
+    "type": "明星商品",
     "title": "POLO衫 棉质干爽网眼 男款",
-    "src": "https://i2.vanclimg.com/cms/20190716/mxzj_15.jpg"
+    "price1": "398.00",
+    "price1": "138.00",
+    "price1": "69.00",
+    "src": "mx6.jpg"
 }, {
+    "id": "23",
+    "type": "明星商品",
     "title": "凡客男士渐变印花沙滩裤",
-    "src": "https://i1.vanclimg.com/cms/20190717/mxzj_16.jpg"
+    "price1": "138.00",
+    "price1": "98.00",
+    "price1": "49.00",
+    "src": "mx7.jpg"
 }, {
+    "id": "24",
+    "type": "明星商品",
     "title": "凡客牛仔裤 修身直筒 轻弹黑牛",
-    "src": "https://i2.vanclimg.com/cms/20190716/mxzj_17.jpg"
+    "price1": "398.00",
+    "price1": "198.00",
+    "price1": "99.00",
+    "src": "mx8.jpg"
 }, {
+    "id": "25",
+    "type": "明星商品",
     "title": "T恤 基础打底 吸汗速干",
-    "src": "https://i2.vanclimg.com/cms/20190716/mxzj_19.jpg"
+    "price1": "118.00",
+    "price1": "58.00",
+    "price1": "29.00",
+    "src": "mx9.jpg"
 }, {
+    "id": "26",
+    "type": "明星商品",
     "title": "T恤 条纹 全棉 男款",
-    "src": "https://i2.vanclimg.com/cms/20190716/mxzj_20.jpg"
+    "price1": "156.00",
+    "price1": "78.00",
+    "price1": "39.00",
+    "src": "mx10.jpg"
 }, {
-    "title": "凡客衬衫 吉国武 免烫 异色领100支 4.0 ",
-    "src": "https://i1.vanclimg.com/cms/20190716/mxzj_21.jpg"
+    "id": "27",
+    "type": "明星商品",
+    "title": "凡客衬衫 吉国武 免烫 异色领100支 4.0",
+    "price1": "698.00",
+    "price1": "358.00",
+    "price1": "179.00",
+    "src": "mx11.jpg"
 }, {
+    "id": "28",
+    "type": "明星商品",
     "title": "凡客内裤 莫代尔 男款",
-    "src": "https://i2.vanclimg.com/cms/20190716/mxzj_22.jpg"
+    "price1": "78.00",
+    "price1": "48.00",
+    "price1": "24.00",
+    "src": "mx12.jpg"
 }, {
+    "id": "29",
+    "type": "明星商品",
     "title": "凡客休闲凉鞋 男款",
-    "src": "https://i2.vanclimg.com/cms/20190716/mxzj_24.jpg"
+    "price1": "298.00",
+    "price1": "178.00",
+    "price1": "89.00",
+    "src": "mx13.jpg"
 }, {
+    "id": "30",
+    "type": "明星商品",
     "title": "凡客运动鞋 飞织 男款",
-    "src": "https://i1.vanclimg.com/cms/20190716/mxzj_25.jpg"
+    "price1": "498.00",
+    "price1": "298.00",
+    "price1": "149.00",
+    "src": "mx14.jpg"
 }, {
-    "title": "凡客帆布鞋 女款 ",
-    "src": "https://i2.vanclimg.com/cms/20190716/mxzj_26.jpg"
+    "id": "31",
+    "type": "明星商品",
+    "title": "凡客帆布鞋 女款",
+    "price1": "198.00",
+    "price1": "138.00",
+    "price1": "69.00",
+    "src": "mx15.jpg"
 }, {
+    "id": "32",
+    "type": "明星商品",
     "title": "凡客透气耐磨运动船袜(两双装)",
-    "src": "https://i1.vanclimg.com/cms/20190716/mxzj_27.jpg"
+    "price1": "99.00",
+    "price1": "88.00",
+    "price1": "44.00",
+    "src": "mx16.jpg"
 }, {
+    "id": "33",
+    "type": "清凉专场",
     "title": "衬衫 易打理 领尖扣 男款",
-    "src": "https://i2.vanclimg.com/cms/20190717/qlzjhs_09.jpg"
+    "price1": "138.00",
+    "src": "ql1.jpg"
 }, {
+    "id": "34",
+    "type": "清凉专场",
     "title": "牛津纺 迷彩拼接 男款",
-    "src": "https://i1.vanclimg.com/cms/20190717/qlzjhs_11.jpg"
+    "price1": "78.00",
+    "src": "ql2.jpg"
 }, {
-    "title": "",
-    "src": "https://i2.vanclimg.com/cms/20190717/qlzjhs_10.jpg"
+    "id": "35",
+    "type": "清凉专场",
+    "title": "凡客衬衫 吉国武 免烫 领尖扣 3.0 藏蓝 ",
+    "price1": "238.00",
+    "src": "ql3.jpg"
 }, {
-    "title": "凡客衬衫 吉国武 SOKTAS 300",
-    "src": "https://i2.vanclimg.com/cms/20190717/qlzjhs_12.jpg"
-}, {
+    "id": "36",
+    "type": "清凉专场",
     "title": "凡客羽绒服 加厚鹅绒 棒球服",
-    "src": "https://i1.vanclimg.com/cms/20190717/qlzj_14_01.jpg"
+    "price1": "198.00",
+    "src": "ql5.jpg"
 }, {
+    "id": "37",
+    "type": "清凉专场",
     "title": "凡客卫衣 廓形连帽 ",
-    "src": "https://i2.vanclimg.com/cms/20190717/qlzj_14_02.jpg"
+    "price1": "198.00",
+    "src": "ql6.jpg"
 }, {
+    "id": "38",
+    "type": "清凉专场",
     "title": "凡客夹克 双帽双拉链 轻弹 男款",
-    "src": "https://i1.vanclimg.com/cms/20190717/qlzj_14_03.jpg"
+    "price1": "198.00",
+    "src": "ql7.jpg"
 }, {
+    "id": "39",
+    "type": "清凉专场",
     "title": "凡客外套 水柔棉 拉链开衫 男款",
-    "src": "https://i2.vanclimg.com/cms/20190717/qlzj_14_04.jpg"
+    "price1": "178.00",
+    "src": "ql8.jpg"
 }, {
+    "id": "40",
+    "type": "清凉专场",
     "title": "童装卫衣 圆领 熊本熊 ",
-    "src": "https://i2.vanclimg.com/cms/20190717/qlzj_19_01.jpg"
+    "price1": "138.00",
+    "src": "ql9.jpg"
 }, {
+    "id": "41",
+    "type": "清凉专场",
     "title": "衬衫 水洗棉 领尖扣 男款",
-    "src": "https://i1.vanclimg.com/cms/20190717/qlzj_19_02.jpg"
+    "price1": "78.00",
+    "src": "ql10.jpg"
 }, {
+    "id": "42",
+    "type": "清凉专场",
     "title": "凡客休闲鞋 系带 3",
-    "src": "https://i2.vanclimg.com/cms/20190717/qlzj_19_03.jpg"
+    "price1": "98.00",
+    "src": "ql11.jpg"
 }, {
+    "id": "43",
+    "type": "清凉专场",
     "title": "凡客男士隐形船袜 帆布鞋专用款",
-    "src": "https://i1.vanclimg.com/cms/20190717/qlzj_19_04.jpg"
+    "price1": "18.00",
+    "src": "ql12.jpg"
+}, {
+    "id": "44",
+    "type": "清凉专场",
+    "title": "凡客衬衫 吉国武 SOKTAS 300",
+    "price1": "2798.00",
+    "src": "ql4.jpg"
+}, {
+    "id": "45",
+    "type": "优选推荐",
+    "title": "4.0日式免烫衬衫",
+    "src": "yx1.jpg"
+}, {
+    "id": "46",
+    "type": "优选推荐",
+    "title": "牛津纺衬衫",
+    "src": "yx2.jpg"
+}, {
+    "id": "47",
+    "type": "优选推荐",
+    "title": " 凡客新品 ",
+    "src": "yx3.jpg"
+}, {
+    "id": "48",
+    "type": "优选推荐",
+    "title": "全棉舒适素色T",
+    "src": "yx4.jpg"
+}, {
+    "id": "49",
+    "type": "优选推荐",
+    "title": "凡客牛津纺衬衫",
+    "src": "yx5.jpg"
+}, {
+    "id": "50",
+    "type": "优选推荐",
+    "title": "纳米防污vt",
+    "src": "yx6.jpg"
+}, {
+    "id": "51",
+    "type": "优选推荐",
+    "title": "沙滩裤",
+    "src": "yx7.jpg"
+}, {
+    "id": "52",
+    "type": "优选推荐",
+    "title": "户外运动",
+    "src": "yx8.jpg"
+}, {
+    "id": "53",
+    "type": "下装推荐",
+    "title": "凡客牛仔裤",
+    "src": "xz1.jpg"
+}, {
+    "id": "54",
+    "type": "下装推荐",
+    "title": "针织裤",
+    "src": "xz2.jpg"
+}, {
+    "id": "55",
+    "type": "下装推荐",
+    "title": "凡客休闲裤 ",
+    "src": "xz3.jpg"
+}, {
+    "id": "56",
+    "type": "下装推荐",
+    "title": "凡客休闲裤 轻弹水洗 修身窄脚 男款 藏青色",
+    "src": "xz4.jpg"
+}, {
+    "id": "57",
+    "type": "更多精品",
+    "title": "帆布鞋",
+    "src": "gd1.jpg"
+}, {
+    "id": "58",
+    "type": "更多精品",
+    "title": "袜品",
+    "src": "gd2.jpg"
+}, {
+    "id": "59",
+    "type": "更多精品",
+    "title": "家居",
+    "src": "gd3.jpg"
+}, {
+    "id": "60",
+    "type": "更多精品",
+    "title": "内衣",
+    "src": "gd4.jpg"
+}, {
+    "id": "61",
+    "type": "更多精品",
+    "title": "箱包",
+    "src": "gd5.jpg"
+}, {
+    "id": "62",
+    "type": "更多精品",
+    "title": "家居",
+    "src": "gd6.jpg"
 }]

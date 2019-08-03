@@ -1,29 +1,39 @@
 [{
+    "id": "0",
     "src": "qianggou1.jpg",
+    "type": "抢购专场",
     "title": "T恤 山鸟叔 深秋 白色",
     "price1": "118",
     "price2": "18",
     "price3": "9"
 }, {
+    "id": "1",
     "src": "qianggou2.jpg",
+    "type": "抢购专场",
     "title": "T恤 山鸟叔 吹两朵云 白色",
     "price1": "118",
     "price2": "18",
     "price3": "9"
 }, {
+    "id": "2",
     "src": "qianggou3.jpg",
+    "type": "抢购专场",
     "title": "T恤 山鸟叔 人类退化史 黑色",
     "price1": "118",
     "price2": "18",
     "price3": "9"
 }, {
+    "id": "3",
     "src": "qianggou4.jpg",
+    "type": "抢购专场",
     "title": "T恤 李子健 月亮猫 白色",
     "price1": "118",
     "price2": "18",
     "price3": "9"
 }, {
+    "id": "4",
     "src": "qianggou5.jpg",
+    "type": "抢购专场",
     "title": "童装卫衣 圆领 熊本熊 S9 浅花灰",
     "price1": "278",
     "price2": "118",

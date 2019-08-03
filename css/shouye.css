@@ -1,3 +1,335 @@
+/* 头部样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    height: 166px;
+    margin-bottom: 30px;
+}
+
+.header .content {
+    margin: auto;
+    width: 1200px;
+    height: 166px;
+}
+
+.headerTop {
+    width: 100%;
+    height: 31px;
+    background: #f7f7f7;
+}
+
+.headerTopRight {
+    float: right;
+    font-size: 12px;
+    width: 126px;
+    height: 29px;
+    background: url(../images/gonggao.png) no-repeat left center;
+}
+
+.headerTopRight a {
+    color: #888888;
+    display: inline-block;
+    line-height: 29px;
+    vertical-align: middle;
+    margin-top: 1px;
+}
+
+.headerTopRight .gonggao {
+    padding-left: 25px;
+}
+
+.weixinBox {
+    width: 20px;
+    height: 21px;
+    background: url(../images/weixin.jpg) no-repeat center;
+    position: relative;
+}
+
+.erweima {
+    width: 150px;
+    height: 170px;
+    background: url(../images/fankeweixin.png) no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    display: none;
+    z-index: 5px;
+}
+
+.weibo {
+    width: 20px;
+    height: 25px;
+    background: url(../images/weibo.jpg) no-repeat center;
+}
+
+
+.active {
+    display: block;
+}
+
+.headerTop .headerTopLeft {
+    width: 304px;
+    height: 31px;
+    float: left;
+    margin-left: 770px;
+}
+
+.headerTopLeft span,
+.headerTopLeft a {
+    display: inline-block;
+    color: #888888;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+}
+
+.login {
+    padding-right: 10px;
+}
+
+.headerTopLeft .zhuce {
+    padding: 0 10px;
+    border-left: 1px solid #888888;
+}
+
+.headerMiddle {
+    margin: 20px 0 10px 0;
+    width: 100%;
+    height: 62px;
+}
+
+.searchBox {
+    width: 438px;
+    height: 52px;
+    padding-top: 8px;
+    float: right;
+}
+
+.searchTap {
+    width: 310px;
+    height: 29px;
+    position: relative;
+    float: left;
+}
+
+.fl {
+    float: left;
+}
+
+
+.search .Enter {
+    width: 249px;
+    height: 27px;
+    padding: 0px 5px;
+    line-height: 27px;
+    border: 1px solid #c9caca;
+}
+
+.btn {
+    width: 49px;
+    height: 29px;
+    border: none;
+    cursor: pointer;
+    background: url(../images/ia_100000109.png) no-repeat scroll -100px 0px;
+}
+
+
+.shoppingCar {
+    float: right;
+    width: 106px;
+    height: 29px;
+    background: url(../images/ia_100000109.png) no-repeat scroll -154px 0px;
+}
+
+.shoppingCar a {
+    display: block;
+    padding-left: 29px;
+    padding-top: 6px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.hotList {
+    width: 440px;
+    color: #727171;
+    padding-left: 15px;
+    float: left;
+    padding-top: 5px;
+}
+
+.hotList li {
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.hotList li a {
+    color: #727171;
+    margin: 0 5px 0 0;
+}
+
+.headerNav {
+    width: 100%;
+    height: 40px;
+}
+
+.headerNav i {
+    display: block;
+    width: 185px;
+    height: 40px;
+    background: url(../images/ia_100000109.png) no-repeat scroll 0px -59px;
+    float: left;
+}
+
+
+.headerNav .nav1 {
+    float: left;
+    width: 1015px;
+    height: 46px;
+}
+
+.headerNav .nav1 li {
+    float: left;
+    width: 98px;
+    line-height: 46px;
+    text-align: center;
+    box-sizing: border-box;
+    /* vertical-align: bottom; */
+    padding-top: 23px;
+    z-index: 50;
+    position: relative;
+}
+
+
+.headerNav .nav1 li a {
+    color: #727171;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 16px;
+    line-height: 16px;
+    padding: 0px 0px 5px 0;
+    font-size: 16px;
+    border-right: solid 1px #888;
+    /* box-sizing: border-box; */
+    /* vertical-align: bottom; */
+}
+
+.headerNav .nav2 {
+    display: none;
+    border: 1px solid #ca0000;
+    border-top: 3px solid #ca0000;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.headerNav .nav2 li {
+    height: 30px;
+    line-height: 30px;
+    padding-top: 0px;
+    background: #fff;
+}
+
+.headerNav .nav2 li a {
+    color: #727171;
+    border: none;
+    line-height: 30px;
+    height: 30px;
+    padding-bottom: 0px;
+}
+
+
+/* banner样式 */
+.banner {
+    width: 1200px;
+    height: 535px;
+    margin: 0 auto;
+}
+
+.banner .content {
+    width: 1200px;
+    height: 535px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.imgBox {
+    width: 100%;
+    height: 100%;
+}
+
+.imgBox a {
+    width: 100%;
+    height: 535px;
+    position: absolute;
+    top: 0;
+    display: none;
+    /* z-index: 1; */
+}
+
+.imgBox a:nth-child(1) {
+    display: block;
+}
+
+.btnBox {
+    width: 100%;
+    position: absolute;
+    top: 236px;
+}
+
+.btnBox i {
+    display: inline-block;
+    width: 28px;
+    height: 60px;
+    background-size: 100%;
+}
+
+.btnBox .leftBtn {
+    float: left;
+    background: url(../images/zuoyou.png) no-repeat 0px 0px;
+}
+
+.btnBox .rightBtn {
+    float: right;
+    background: url(../images/zuoyou.png) no-repeat -50px 0px;
+}
+
+.dropBox {
+    position: absolute;
+    padding-left: 500px;
+    bottom: 20px;
+}
+
+.dropBox span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.dropBox .red {
+    background: rgb(207, 2, 2);
+}
+
+
+/* 内容 */
+
 .coupon {
     width: 1200px;
     margin: 0 auto;
@@ -10,6 +342,7 @@
 .qianggou {
     margin: 0 auto;
     width: 1200px;
+    overflow: hidden;
     /* height: 64px; */
 }
 
@@ -135,10 +468,180 @@
 .shangxinBox {
     margin: 0 auto;
     width: 1200px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .shangxinT {
     width: 100%;
     height: 84px;
     background: url(../images/shangxin.jpg) no-repeat center;
+}
+
+.container1 {
+    margin-left: 27px;
+    display: inline-grid;
+    grid-template-columns: 268px 268px 268px 268px;
+    grid-template-rows: 424px 424px 424px;
+    grid-column-gap: 27px;
+    grid-row-gap: 10px;
+}
+
+.mingxinBox {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+.mingxingT {
+    background: url(../images/mingxing.jpg) no-repeat center;
+}
+
+.mingxingT,
+.qingliangT {
+    width: 100%;
+    height: 52px;
+    margin-bottom: 20px;
+}
+
+.mingxingB {
+    width: 100%;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 533px 533px 533px 533px;
+    grid-row-gap: 40px;
+}
+
+.qingliangBox {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.qingliangT {
+    background: url(../images/ql.jpg) no-repeat center;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 533px 533px 533px;
+    grid-row-gap: 40px;
+}
+
+.youxuan {
+    width: 1200px;
+    margin: 0 auto;
+    /* height: 1200px; */
+    overflow: hidden;
+}
+
+.youxuan h2 {
+    text-align: center;
+    line-height: 50px;
+    margin: 30px 0px;
+    color: #9a9a9a;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.yxL {
+    float: left;
+    margin-right: 17px;
+    width: 590px;
+    height: 510px;
+    box-sizing: border-box;
+    border: 1px solid #e8e7ec;
+}
+
+.yxL img,
+.yxR img {
+    margin-bottom: 15px;
+}
+
+.yxMT img,
+.yxMB img {
+    margin-bottom: 25px;
+}
+
+.yxM {
+    float: left;
+    width: 290px;
+    height: 530px;
+    margin-right: 17px;
+    box-sizing: border-box;
+}
+
+.yxMT {
+    width: 290px;
+    height: 250px;
+    margin-bottom: 16px;
+    border: 1px solid #e8e7ec;
+    box-sizing: border-box;
+}
+
+.yxMB {
+    width: 290px;
+    height: 250px;
+    border: 1px solid #e8e7ec;
+    box-sizing: border-box;
+}
+
+.yxR {
+    float: left;
+    width: 286px;
+    height: 509px;
+    border: 1px solid #e8e7ec;
+    box-sizing: border-box;
+}
+
+.sL {
+    height: 28px;
+    line-height: 28px;
+    padding: 20px 0px 20px 12px;
+}
+
+.sR {
+    float: right;
+    color: #a10000;
+    line-height: 24px;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-top: 3px;
+}
+
+.xiazhuang {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.xiazhuang h1 {
+    text-align: center;
+    line-height: 50px;
+    margin: 30px 0px;
+    color: #9a9a9a;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.xiazhuangBox {
+    margin-left: 15px;
+}
+
+
+.xiazhuang ul li {
+    float: left;
+    width: 258px;
+    height: 508px;
+    margin-right: 38px;
+    margin-bottom: 20px
+}
+
+.xiazhuang ul li img {
+    width: 285px;
+    height: 438px;
 }

@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../css/registe.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/captcha.js"></script>
+    <script src="../js/footer.js"></script>
     <script src="../js/registe.js"></script>
 </head>
 
@@ -24,12 +27,44 @@
                 <img src="../images/login_logo.jpg" alt="">
             </div>
             <div class="mainR">
-                <div class="yanzhengmaBox">
-                    <input type="text">
+                <div class="imgCodeBox">
+                    <input type="text" id="imgCode">
+                    <span class="imgCode">
+                        <canvas id="captcha"></canvas>
+                    </span>
+                    <span class="imgCodeText">请输入图片验证码</span>
+                </div>
+                <div class="phoneBox">
+                    <input type="text" id="phoneNum">
+                    <span class="sendMsg">获取短信验证码</span>
+                    <span class="msgCodeText">请输入有效的手机号</span>
+                </div>
+                <div class="msgCode">
+                    <input type="text" id="phoneMsg">
+                    <span>sdasdasd</span>
+                </div>
+                <div class="passwordBox1">
+                    <input type="text" id="password1">
+                    <span></span>
+                    <p class="p1">
+                        <b class="b1">安全强度: </b><span class="s1"></span><span class="s2"></span><span
+                            class="s3"></span><b class="b2">强</b>
+                    </p>
+                </div>
+                <div class="passwordBox2">
+                    <input type="text" id="password2">
+                    <span>sdasda</span>
+                </div>
+                <div class="checkBox">
+                    <div class="checkBox1">
+                        <span><input type="checkBox" id="check"><label for="check">请阅读</label><a
+                                href="#">《VANCL凡客诚品服务条款》</a></span>
+                        <a href="#" class="btn"><b class="zhuce">立即注册</b></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="fooet"></div>
+
     </div>
 </body>
 

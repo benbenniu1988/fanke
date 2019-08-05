@@ -4,17 +4,17 @@
 
 function CaptchaMini(params = {}) {
     let middleParams = Object.assign({
-        lineWidth: 10,   //线条宽度
-        lineNum: 3,       //线条数量
-        dotR: 3,          //点的半径
-        dotNum: 10,       //点的数量
-        preGroundColor: [10, 80],    //前景色区间
+        lineWidth: 10, //线条宽度
+        lineNum: 3, //线条数量
+        dotR: 3, //点的半径
+        dotNum: 10, //点的数量
+        preGroundColor: [10, 80], //前景色区间
         backGroundColor: [150, 250], //背景色区间
-        fontSize: 20,           //字体大小
-        fontFamily: ['Georgia', '微软雅黑', 'Helvetica', 'Arial'],  //字体类型
-        fontStyle: 'fill',      //字体绘制方法，有fill和stroke
-        content: 'acdefhijkmnpwxyABCDEFGHJKMNPQWXY12345789',  //验证码内容
-        length: 4    //验证码长度
+        fontSize: 20, //字体大小
+        fontFamily: ['Georgia', '微软雅黑', 'Helvetica', 'Arial'], //字体类型
+        fontStyle: 'fill', //字体绘制方法，有fill和stroke
+        content: 'acdefhijkmnpwxyABCDEFGHJKMNPQWXY12345789', //验证码内容
+        length: 4 //验证码长度
     }, params);
     Object.keys(middleParams).forEach(item => {
         this[item] = middleParams[item];
@@ -24,16 +24,16 @@ function CaptchaMini(params = {}) {
 };
 
 /*Captcha的原型上绑定方法
-* 获取区间的随机数
-* params []*/
+ * 获取区间的随机数
+ * params []*/
 CaptchaMini.prototype.getRandom = function (...arr) {
-    arr.sort((a,b) => a - b);
+    arr.sort((a, b) => a - b);
     return Math.floor(Math.random() * (arr[1] - arr[0]) + arr[0]);
 };
 
 /*Captcha的原型上绑定方法
-* 获取随机颜色
-* params []*/
+ * 获取随机颜色
+ * params []*/
 CaptchaMini.prototype.getColor = function (arr) {
     let colors = new Array(3).fill('');
     colors = colors.map(item => this.getRandom(...arr));
@@ -41,20 +41,20 @@ CaptchaMini.prototype.getColor = function (arr) {
 };
 
 /*Captcha的原型上绑定方法
-* 获取验证码*/
+ * 获取验证码*/
 CaptchaMini.prototype.getText = function () {
     let length = this.content.length;
     let str = '';
-    for (let i = 0;i < this.length; i++) {
+    for (let i = 0; i < this.length; i++) {
         str += this.content[this.getRandom(0, length)];
     }
     return str;
 };
 
 /*Captcha的原型上绑定方法
-* 绘制线条*/
+ * 绘制线条*/
 CaptchaMini.prototype.line = function () {
-    for (let i = 0;i < this.lineNum; i++) {
+    for (let i = 0; i < this.lineNum; i++) {
         /*随机获取线条的起始位置*/
         let x = this.getRandom(0, this.canvas.width);
         let y = this.getRandom(0, this.canvas.height);
@@ -77,7 +77,7 @@ CaptchaMini.prototype.line = function () {
 };
 
 /*Captcha的原型上绑定方法
-* 绘制圆点*/
+ * 绘制圆点*/
 CaptchaMini.prototype.circle = function () {
     for (let i = 0; i < this.dotNum; i++) {
         /*随机获取圆心*/
@@ -97,11 +97,11 @@ CaptchaMini.prototype.circle = function () {
 
 
 /*Captcha的原型上绑定方法
-* 绘制文字*/
+ * 绘制文字*/
 CaptchaMini.prototype.font = function () {
-  let str = this.getText();
-  this.callback(str);
-  /*指定文字风格*/
+    let str = this.getText();
+    this.callback(str);
+    /*指定文字风格*/
     this.paint.font = this.fontSize + 'px ' + this.fontFamily[this.getRandom(0, this.fontFamily.length)];
     this.paint.textBaseline = 'middle';
     /*指定文字绘制风格*/
@@ -125,12 +125,12 @@ CaptchaMini.prototype.font = function () {
 };
 
 /*Captcha的原型上绑定方法
-* 绘制图形*/
+ * 绘制图形*/
 CaptchaMini.prototype.draw = function (dom, callback = function () {}) {
     /*获取canvas的dom*/
     if (!this.paint) {
         this.canvas = dom;
-        if (!this.canvas) return ;
+        if (!this.canvas) return;
         else this.paint = this.canvas.getContext('2d');
         /*回调函数赋值给this*/
         this.callback = callback;
@@ -140,7 +140,7 @@ CaptchaMini.prototype.draw = function (dom, callback = function () {}) {
     }
     /*随机画布颜色，使用背景色*/
     let colors = this.getColor(this.backGroundColor);
-    this.paint.fillStyle = 'rgba(' + colors[0] + ',' + colors[1] + ',' + colors[2] + ',' + '0.8)';
+    this.paint.fillStyle = 'rgba(' + colors[0] + ',' + colors[1] + ',' + colors[2] + ',' + '1)';
 
     /*绘制画布*/
     this.paint.fillRect(0, 0, this.canvas.width, this.canvas.height);
@@ -152,13 +152,13 @@ CaptchaMini.prototype.draw = function (dom, callback = function () {}) {
 };
 
 /*Captcha的原型上绑定方法
-* 清空画布*/
+ * 清空画布*/
 CaptchaMini.prototype.clear = function () {
     this.paint.clearRect(0, 0, this.canvas.width, this.canvas.height);
 };
 
 /*Captcha的原型上绑定方法
-* 重新绘制*/
+ * 重新绘制*/
 CaptchaMini.prototype.drawAgain = function () {
     this.clear();
     this.draw(this.callbak);

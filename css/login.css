@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.login .header {
+    margin-top: 10px;
+    height: 58px;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+.login .header a {
+    display: inline-block;
+    width: 187px;
+    height: 48px;
+    background: url(../images/logo_new.jpg) no-repeat center;
+}
+
+.login .main {
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main h1 {
+    height: 35px;
+    width: 400px;
+    float: right;
+    line-height: 35px;
+    margin: 0 100px 0 0;
+    padding-left: 10px;
+    font-size: 22px;
+    color: #a2a2a2;
+}
+
+.main h1 span {
+    font-size: 14px;
+    float: right;
+    font-weight: normal;
+}
+
+.main h1 span a {
+    color: #b52024;
+    margin: 0 0 0 3px;
+}
+
+.mainL {
+    width: 465px;
+    height: 428px;
+    float: left;
+    margin: 55px 0 0 150px
+}
+
+.mainL img {
+    width: 465px;
+    height: 352px;
+}
+
+.mainR {
+    width: 400px;
+    float: right;
+    margin: 18px 100px 20px 0;
+    position: relative;
+    height: 435px;
+}
+
+.normalLogin {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    display: none;
+    border: solid 1px #cbcbcb;
+    box-sizing: border-box;
+}
+
+.tabBox {
+    width: 400px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #cbcbcb;
+    box-sizing: border-box;
+}
+
+.tabBox ul {
+    overflow: hidden;
+}
+
+.tabBox ul li {
+    width: 199px;
+    height: 34px;
+    line-height: 35px;
+    float: left;
+    text-align: center;
+    background: #f5f5f5;
+    color: #656565;
+    cursor: pointer;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.tabBox ul .on {
+    width: 199px;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    text-align: center;
+    background: #b42025;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.usernameBox,
+.passwordBox {
+    overflow: hidden;
+    height: 69px;
+    position: relative;
+}
+
+.usernameBox {
+    margin-top: 20px;
+}
+
+
+.usernameBox input,
+.passwordBox input {
+    height: 45px;
+    line-height: 45px;
+    color: #acacac;
+    width: 360px;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    text-indent: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+.usernameBox input {
+    position: absolute;
+
+}
+
+.usernameBox span,
+.passwordBox span,
+.phoneBox .msgCodeText,
+.imgCodeBox .imgCodeText2,
+.msgCode .msgCodeText {
+    clear: both;
+    width: 220px;
+    min-height: 16px;
+    line-height: 16px;
+    color: #A10000;
+    text-indent: 30px;
+    background: url(https://ssl.vanclimg.com/login/login_spritesbg.png) -351px -662px no-repeat;
+    background-color: #FFF6F7;
+    border: 1px solid #CC9998;
+    margin-left: 48px;
+    display: block;
+}
+
+.usernameBox span,
+.passwordBox span {
+    position: absolute;
+    margin: 3px 0 3px 48px;
+    bottom: 0;
+    display: none;
+}
+
+.btnBox {
+    width: 360px;
+    height: 75px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.forget {
+    line-height: 30px;
+    display: inline;
+    color: #b42025;
+    font-size: 14px;
+    font-weight: bolder;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+#vanclLogin {
+    display: block;
+    width: 100%;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    background: #b42025;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.logosBox {
+    width: 100%;
+    height: 104px;
+    border-top: 2px dotted #ccc;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.logos {
+    width: 360px;
+    height: 77px;
+    margin-top: 15px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.logos h2 {
+    color: #a4a4a4;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+.logos img {
+    width: 360px;
+    height: 33px;
+    cursor: pointer;
+}
+
+.quickLoginBox {
+    display: none;
+    width: 400px;
+    height: 420px;
+    border: 1px solid #cbcbcb;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 35px;
+}
+
+.quickLogin {
+    width: 455px;
+    height: 294px;
+    padding: 10px 20px;
+}
+
+.phoneBox,
+.imgCodeBox,
+.msgCode {
+    position: relative;
+    overflow: hidden;
+    height: 75px;
+}
+
+.phoneBox {
+    margin-top: 3px;
+}
+
+.phoneBox input {
+    width: 250px;
+    height: 45px;
+    line-height: 45px;
+    color: #656565;
+    text-align: left;
+    text-indent: 10px;
+    /* z-index: 9; */
+    font-size: 14px;
+    float: left;
+    margin-bottom: 3px;
+}
+
+.phoneBox .sendMsg {
+    width: 97px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background: #f5f5f5;
+    color: #b52024 !important;
+    border: solid 1px #cbcbcb;
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 10px;
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.phoneBox .msgCodeText,
+.imgCodeBox .imgCodeText2 {
+    margin: 0 0 3px 48px;
+    font-size: 12px;
+    height: 18px;
+}
+
+.imgCodeBox {
+    width: 100%;
+}
+
+.imgCodeBox input,
+.msgCode #phoneMsg {
+    height: 45px;
+    line-height: 45px;
+    color: #656565;
+    width: 144px;
+    text-align: left;
+    text-indent: 10px;
+    /* z-index: 9; */
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+#captcha {
+    vertical-align: middle;
+    width: 140px;
+    height: 49px;
+    margin-left: -5px;
+}
+
+.imgCodeText1 {
+    font-size: 12px;
+    line-height: 18px;
+    color: #333;
+    position: absolute;
+    top: 0;
+    left: 64%;
+    cursor: pointer;
+}
+
+
+.msgCode {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.msgCode #phoneMsg {
+    width: 360px;
+    box-sizing: border-box;
+}
+
+.btnBox1 {
+    width: 360px;
+}
+
+.btnBox1 a {
+    display: block;
+    width: 100%;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    background: #b42025;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.logosBox1 {
+    width: 399px;
+    height: 104px;
+    border-top: 2px dotted #ccc;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: -20px;
+    box-sizing: border-box;
+}
+
+.logosBox1 .logos {
+    width: 360px;
+    overflow: hidden;
+}
+
+.logosBox1 .logos h2 {
+    color: #a4a4a4;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+.logosBox1 .logos img {
+    width: 358px;
+    height: 33px;
+    cursor: pointer;
+}
+
+.phoneBox .msgCodeText,
+.imgCodeBox .imgCodeText2,
+.msgCode .msgCodeText {
+    display: none;
+    font-size: 12px;
+}
+
+.active {
+    display: block;
+}
+
+.phoneBox .cur,
+.imgCodeBox .cur,
+.msgCode .cur {
+    display: block;
+}

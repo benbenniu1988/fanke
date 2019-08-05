@@ -45,12 +45,16 @@ class Headers {
             "nav2": []
         }];
         this.ul = null;
+        // this.username = store.get("name");
+        this.password = null;
     }
     init() {
         this.creatHtml();
         this.addEventMouseenter();
     }
     creatHtml() {
+
+
         let olis1;
         let html = "";
         let htmlA = $("<div></div>").addClass("header");
@@ -79,8 +83,8 @@ class Headers {
                                 <div class="headerTop">
                                 <div class="headerTopLeft">
                                     <span>你好， 欢迎光临凡客诚品！ </span>
-                                    <a href="#" class="login">登录</a>
-                                    <a href="#" class="zhuce">注册</a>
+                                    <a href="../html/login.html" class="login">登录</a>
+                                    <a href="../html/registe.html" class="zhuce">注册</a>
                                     <a href="#" class="order">我的订单</a>
                                 </div>
                                 <div class="headerTopRight">
@@ -121,20 +125,33 @@ class Headers {
         });
 
         $("body").prepend($("<div></div>").addClass("header").html(html));
+
+        let username = store.get("username");
+        console.log(username);
+        if (username) {
+            $(".headerTopLeft").empty();
+            $(".headerTopLeft").append($("<span></span>").html(`你好 ${username} 欢迎光临`)).append($("<a href='' class='logout'></a>").html("登出"))
+        }
+
         $(".headerNav").append(oUl1);
     }
     addEventMouseenter() {
         $(".nav1").on("mouseenter", "li", function () {
             $(this).children(".nav2").slideDown().parent().siblings().children(".nav2").slideUp().stop();
-
         });
+
         $(".nav1").on("mouseleave", "li", function () {
             $(this).children(".nav2").css("display", "none");
         });
+
         $(".weixinBox").hover(function () {
             $(this).children().addClass("active");
         }, function () {
             $(this).children().removeClass("active");
+        });
+
+        $(".logout").click(function () {
+            store.clear();
         })
     }
 };

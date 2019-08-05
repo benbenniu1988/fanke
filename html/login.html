@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/captcha.js   "></script>
+    <script src="../js/store.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/footer.js"></script>
+</head>
+
+<body>
+    <div class="login">
+        <div class="header">
+            <a href=""></a>
+        </div>
+        <div class="main">
+            <h1>
+                凡客 Vancl 登录 <span>没有账户免费<a href="../html/registe.html">注册</a></span>
+            </h1>
+            <div class="mainL">
+                <img src="../images/login_newlogo.jpg" alt="">
+            </div>
+            <div class="mainR">
+                <div class="tabBox">
+                    <ul class="tabBox1">
+                        <li class="on">普通登录</li>
+                        <li>快速登录</li>
+                    </ul>
+                </div>
+                <div class="normalLogin active">
+                    <div class="usernameBox">
+                        <input type="text" id="username" placeholder="请输入用户名">
+                        <span></span>
+                    </div>
+                    <div class="passwordBox">
+                        <input type="text" id="password" placeholder="请输入密码">
+                        <span></span>
+                    </div>
+                    <div class="btnBox">
+                        <a class="forget" href="https://login.vancl.com/login/GetPwdStep1.aspx">找回密码</a>
+                        <a id="vanclLogin" class="log" href="#">登 录</a>
+                    </div>
+                    <div class="logosBox">
+                        <div class="logos">
+                            <h2 class="hezuo">使用合作网站账号登录凡客</h2>
+                            <img src="../images/logos.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="quickLoginBox">
+                    <div class="quickLogin">
+                        <div class="phoneBox">
+                            <input type="text" id="phoneNum" placeholder="请输入手机号码">
+                            <span class="sendMsg">获取短信验证码</span>
+                            <span class="msgCodeText">请输入有效的手机号</span>
+                        </div>
+                        <div class="imgCodeBox">
+                            <input type="text" id="imgCode" placeholder="请输入验证码">
+                            <span class="imgCode">
+                                <canvas id="captcha"></canvas>
+                            </span>
+                            <span class="imgCodeText1 clear">看不清?换一张</span>
+                            <span class="imgCodeText2">请输入图片验证码</span>
+                        </div>
+                        <div class="msgCode">
+                            <input type="text" id="phoneMsg" placeholder="请输入手机验证码">
+                            <span class="msgCodeText">sdasdasd</span>
+                        </div>
+                        <div class="btnBox1">
+                            <a href="#" class="loginBtn">登录</a>
+                        </div>
+                        <div class="logosBox1">
+                            <div class="logos">
+                                <h2 class="hezuo">使用合作网站账号登录凡客</h2>
+                                <img src="../images/logos.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <img src="../html/shouye.html" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

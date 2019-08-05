@@ -1,5 +1,7 @@
 $(function () {
     let date = new Date(2019, 7, 1, 22, 00, 00);
+    
+
     let miaoSha = $("<div></div>").addClass("qianggouT")
     let timeTemp = "";
     let timer = setInterval(function () {

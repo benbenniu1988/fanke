@@ -1,0 +1,1010 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.listpage {
+    width: 1200px;
+    /* overflow: hidden; */
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.breadnav {
+    line-height: 40px;
+    clear: both;
+}
+
+.locationdiv {
+    display: inline;
+    float: left;
+    width: 180px;
+    height: 40px;
+}
+
+.locationdiv span {
+    color: #b4b4b4;
+}
+
+a:link,
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+.tsmsg {
+    display: inline;
+    float: right;
+    color: #b4b4b4;
+}
+
+.tsmsg span {
+    color: #a00000;
+    padding: 0px 2px;
+}
+
+.selectarea {
+    border: 1px solid #C7CACD;
+    clear: both;
+    padding: 0px 1px 0px 0px;
+}
+
+.clearfix {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.selectareali01 {
+    background: #fff;
+}
+
+.selectareali,
+.selectareali01 {
+    clear: both;
+    overflow: hidden;
+    zoom: 1;
+    line-height: 24px;
+    background: #f5f5f5;
+}
+
+.full .selectareaLeft {
+    width: 66px;
+    height: 34px;
+}
+
+.selectareaLeft {
+    display: inline;
+    float: left;
+    width: 50px;
+    text-align: center;
+}
+
+.selectareaLeft em {
+    color: #2f2f2f;
+    font-style: normal;
+    line-height: 34px;
+}
+
+.full .selectareaRight {
+    width: 1130px;
+}
+
+.selectareaRight {
+    display: inline;
+    float: left;
+    width: 926px;
+    padding: 5px 0px 5px;
+    border-left: 1px solid #ccc;
+    background: #fff;
+}
+
+.selectareali01 .autoheight ul {
+    height: auto;
+}
+
+.typearea {
+    height: 34px;
+}
+
+.selectareaRight ul {
+    overflow: hidden;
+}
+
+.selectareaRight ul li {
+    display: block;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 25px;
+    _margin-left: 24px;
+    white-space: nowrap;
+    _float: none;
+    _display: inline-block;
+    _display: inline;
+    _zoom: 1;
+}
+
+.selectareaRight li a {
+    display: block;
+    float: left;
+    min-width: 11px;
+}
+
+.selectareaRight li a span {
+    color: #999;
+    height: 20px;
+}
+
+.full .filterTabBarN5 {
+    width: 1200px;
+}
+
+.filterTabBarN5 {
+    border-bottom: 2px solid #b81c22;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.searchTabbarN5 {
+    margin-left: 1px;
+    width: 755px;
+}
+
+.searchTabbarN5 li {
+    float: left;
+    height: 28px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 28px;
+    background: #b81c22;
+    color: #343434;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 0px 20px 0px;
+    margin: 1px 0px 0px -1px;
+    margin-top: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.searchTabbarN5 li.hover {
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 0px;
+    background: #b81c22;
+    border: none;
+}
+
+.searchTabbarN5 li.hover a {
+    color: #fff;
+}
+
+.pageBoxN5 {
+    line-height: 40px;
+    position: absolute;
+    right: 0px;
+    top: -2px;
+}
+
+.pagediv {
+    display: inline;
+    float: right;
+}
+
+.pagediv span {
+    display: block;
+    float: left;
+    margin-left: 12px;
+}
+
+
+
+.searchCol {
+    float: left;
+    position: relative;
+}
+
+.searchCol ul li {
+    float: left;
+    height: 34px;
+    border: 1px solid #f5f5f5;
+    border-left-color: #ddd;
+    border-bottom: none;
+    border-top: none;
+    line-height: 34px;
+    padding: 0px 12px 0px 20px;
+}
+
+.searchCol ul li.jiage {
+    width: 89px;
+    padding: 0px;
+    height: 34px;
+    text-align: center;
+    position: relative;
+    border-right: none;
+}
+
+.searchCol ul li.jiageHover {
+    width: 73px;
+    padding-left: 15px;
+    text-align: left;
+    border-left-color: #ddd;
+    background: #eee;
+}
+
+.searchbarPrice {
+    float: left;
+    height: 34px;
+    border-right: 1px solid #ddd;
+    width: 133px;
+}
+
+.searchbarTextN50124 {
+    float: left;
+    width: 109px;
+    position: relative;
+    height: 29px;
+    z-index: 1;
+    margin-left: 15px;
+    display: inline;
+    margin-top: 2px;
+}
+
+.searchbarTextN50124 .searchbarInit {
+    position: absolute;
+    width: 107px;
+    height: 27px;
+    z-index: 6;
+}
+
+.pageBoxN5 {
+    line-height: 40px;
+    position: absolute;
+    right: 0px;
+    top: -2px;
+}
+
+.jquery_pager_prevpage {
+    background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat 0px -72px;
+    height: 17px;
+    width: 19px;
+    cursor: pointer;
+    display: block;
+    margin-top: 11px;
+}
+
+.jquery_pager_nextpage {
+    background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat 0px -89px;
+    cursor: pointer;
+    height: 17px;
+    width: 48px;
+    display: block;
+    margin-top: 11px;
+}
+
+.filterFormN5 {
+    width: 1200px;
+    border-top: none;
+    height: 34px;
+    position: relative;
+    *z-index: 200;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+
+.filterForm0703 {
+    *position: absolute;
+    *z-index: 200;
+}
+
+.filterSection {
+    height: 35px;
+}
+
+.fkeyWordN5 {
+    float: left;
+    margin-left: 8px;
+    display: inline;
+    padding-top: 2px;
+    overflow: hidden;
+}
+
+.fkeyWordN5 li {
+    float: left;
+}
+
+.fkeyWordN5 li.keywordLiN501 {
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.fkeyWordN5 li .text {
+    width: 145px;
+    padding: 0px 2px 0px;
+    border: 1px solid #adb1b4;
+    height: 17px;
+    line-height: 17px;
+    color: #999;
+    float: left;
+}
+
+.fkeyWordN5 li .keywordiClose {
+    background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat 0px -490px;
+    display: block;
+    width: 11px;
+    height: 11px;
+    float: left;
+    margin-left: -15px;
+    margin-top: 4px;
+}
+
+.fkeyWordN5 li.keywordLiN502 {
+    margin-top: 5px;
+}
+
+.fkeyWordN5 li .buttonN5 {
+    width: 45px;
+    height: 19px;
+    border: none;
+    margin-left: 17px;
+    cursor: pointer;
+    margin-left: 0px;
+    background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat 0px -506px;
+}
+
+.fkeySend {
+    float: left;
+    height: 19px;
+    margin: 8px 0px 0px 5px;
+    line-height: 19px;
+    display: inline;
+}
+
+.fkeySend span {
+    margin-left: 15px;
+    _margin-left: 0px;
+}
+
+.fkeySend span input {
+    vertical-align: middle;
+    margin-right: 8px;
+    _margin-right: 4px;
+    margin-top: -3px;
+}
+
+.advancedBoxN5 {
+    float: right;
+    padding-top: 4px;
+    _padding-top: 9px;
+    margin-right: 30px;
+    display: inline;
+}
+
+.advancedN5 li {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+}
+
+.advancedN5 li input {
+    vertical-align: middle;
+    margin: -2px 5px 0px 0px;
+    *margin-right: 1px;
+}
+
+.advancExpandLi {
+    position: relative;
+    width: 75px;
+    z-index: 7;
+    left: -4px;
+}
+
+.advancExpandLi .advancExpand01 {
+    position: absolute;
+    width: 72px;
+    height: 25px;
+    line-height: 25px;
+    z-index: 6;
+    padding-left: 5px;
+    *width: 75px;
+    *padding-left: 2px;
+}
+
+.advancExpandLi .advancExpand02 {
+    position: absolute;
+    width: 75px;
+    height: 129px;
+    z-index: 7;
+    border: 1px solid #b4b4b4;
+    background: #fff;
+    top: -1px;
+    _top: -5px;
+    _overflow: hidden;
+}
+
+.advancExpandLi .advancExpand02 .advancExpand02Con {
+    position: relative;
+    top: 25px;
+    left: 12px;
+}
+
+.advancExpandLi .advancExpand02 .advancExpand02ul {
+    background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat 0px -2990px;
+    padding-left: 10px;
+    height: 64px;
+}
+
+.advancExpandLi .advancExpand02 .advancExpand02ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+.advancExpandLi .advancExpand02 .searchbarBtnStrong {
+    background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat -0px -3058px;
+    width: 45px;
+    height: 19px;
+    display: block;
+    margin: 13px 0px 0px 3px;
+}
+
+.advancedN5Li0124 {
+    margin-left: 6px;
+    float: left;
+    display: inline;
+}
+
+.tbSortbar {
+    height: 34px;
+    background: #f0f0f0;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    top: 0px;
+    width: 754px;
+}
+
+.searchCol {
+    float: left;
+    position: relative;
+}
+
+.searchCol ul li {
+    float: left;
+    height: 34px;
+    border: 1px solid #f5f5f5;
+    border-left-color: #ddd;
+    border-bottom: none;
+    border-top: none;
+    line-height: 34px;
+    padding: 0px 12px 0px 20px;
+}
+
+.searchCol ul li a {
+    color: #656565;
+    display: inline-block;
+}
+
+.searchCol ul li a:link,
+.searchCol ul li a:visited,
+.hbDpBox li a:link,
+.hbDpBox li a:visited {
+    color: #656565;
+    text-decoration: none;
+}
+
+.searchCol ul li a:hover,
+.hbDpBox li a:hover {
+    color: #b81c22;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.searchCol ul li em {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+}
+
+.searchCol ul li a span {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    line-height: 11px;
+    margin-left: 0px;
+    text-indent: -9999px;
+    vertical-align: middle;
+    background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat;
+}
+
+.searchCol ul li a span.upTrendBottom {
+    background-position: 0px -3090px;
+}
+
+.searchCol ul li a span.upTrendBottomRed {
+    background-position: -21px -3090px;
+}
+
+.searchCol ul li a span.BottomTrendUp {
+    background-position: 0px -3112px;
+}
+
+.searchCol ul li a span.BottomTrendUpRed {
+    background-position: -21px -3112px;
+}
+
+.searchCol ul li a span.upTrendBottomNew {
+    background-position: 0 -3112px;
+}
+
+.searchCol ul .jiageHover a span.upTrendBottomRed {
+    margin-left: 6px;
+}
+
+.searchCol ul li span.triggerMore,
+.hbDpBox li span.triggerMore {
+    display: inline-block;
+    text-indent: -9999px;
+    vertical-align: top;
+    background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat 0px -3131px;
+    width: 11px;
+    height: 10px;
+    position: relative;
+    top: 13px;
+    z-index: 4;
+}
+
+.searchCol ul li.moren {
+    border-left: none;
+}
+
+.searchCol ul li.jiage {
+    width: 89px;
+    padding: 0px;
+    height: 34px;
+    text-align: center;
+    position: relative;
+    border-right: none;
+}
+
+.searchCol ul li.jiageHover {
+    width: 73px;
+    padding-left: 15px;
+    text-align: left;
+    border-left-color: #ddd;
+    background: #eee;
+}
+
+.searchCol ul li .dropdownList {
+    position: absolute;
+    width: 88px;
+    border: 1px solid #ddd;
+    border-top: none;
+    left: -1px;
+    top: 0px;
+    background: #eee;
+    z-index: 3;
+}
+
+.searchCol ul li .dropdownList p,
+.hbDpBox li .hblistTip p {
+    height: 34px;
+    text-align: left;
+}
+
+.searchCol ul li .dropdownList p a {
+    height: 34px;
+    line-height: 34px;
+    padding-left: 15px;
+    width: 71px;
+}
+
+.searchCol ul li .dropdownList p a:hover {
+    background: #fff;
+    cursor: pointer;
+    color: #b81c22;
+}
+
+.searchCol ul li .dropdownList p a span {
+    margin-left: 6px;
+}
+
+.searchbarPrice {
+    float: left;
+    height: 34px;
+    border-right: 1px solid #ddd;
+    width: 133px;
+}
+
+.searchbarTextN50124 {
+    float: left;
+    width: 109px;
+    position: relative;
+    height: 29px;
+    z-index: 1;
+    margin-left: 15px;
+    display: inline;
+    margin-top: 2px;
+}
+
+.Fline0124 {
+    margin: 6px 3px 0px;
+    float: left;
+    display: inline;
+    line-height: 19px;
+    color: #999;
+    font-size: 19px;
+}
+
+.searchbarTextN50124 .searchbarInit {
+    position: absolute;
+    width: 107px;
+    height: 27px;
+    z-index: 6;
+}
+
+.searchbarFoused {
+    position: absolute;
+    width: 110px;
+    height: 50px;
+    z-index: 5;
+    border: 1px solid #b4b4b4;
+    background: #fff;
+    left: -2px;
+}
+
+.searchbarFoused p {
+    height: 21px;
+    position: relative;
+    top: 27px;
+}
+
+.searchbarFoused p .searchbarBtnCommon {
+    line-height: 19px;
+    padding-left: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.searchbarFoused p .searchbarBtnStrong {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(http://i2.vanclimg.com/search/tabbgn6_ws.png) no-repeat -0px -58px;
+    width: 45px;
+    height: 19px;
+    margin-left: 10px;
+}
+
+.FpriceText0124 {
+    border: 1px solid #aeb1b4;
+    height: 17px;
+    line-height: 17px;
+    width: 35px;
+    padding-left: 3px;
+    float: left;
+    margin: 6px 0px 0px 6px;
+    display: inline;
+    color: #999;
+}
+
+.FpriceTextMal0124 {
+    margin-left: 0px;
+}
+
+.hbDpBox {
+    float: right;
+}
+
+.hbDpBox li {
+    float: left;
+    height: 34px;
+    border-left: 1px solid #ccc;
+    line-height: 34px;
+    width: 88px;
+    text-align: center;
+    position: relative;
+}
+
+.hbDpBox li a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hbDpBox li.hblistHover {
+    background: #eee;
+}
+
+.hbDpBox li.hblist {
+    position: relative;
+}
+
+.hbDpBox li.hblist a.hblistLink {
+    position: relative;
+}
+
+.hbDpBox li.hblist a.hblistLink:link,
+.hbDpBox li.hblist a.hblistLink:visited {
+    color: #656565;
+}
+
+.hbDpBox li.hblist a.hblistLink:hover {
+    color: #b81c22;
+}
+
+.hbDpBox li.hblistHover a.hblistLink:link,
+.hbDpBox li.hblistHover a.hblistLink:visited {
+    color: #b81c22;
+}
+
+.hbDpBox li.hblistHover a.hblistLink:hover {
+    color: #b81c22;
+}
+
+.hbDpBox li.hblist .triggerMore {
+    position: relative;
+    z-index: 4;
+}
+
+.hbDpBox li .hblistTip {
+    width: 88px;
+    position: absolute;
+    border: 1px solid #ccc;
+    border-top: none;
+    left: -1px;
+    background: #eee;
+    top: 0px;
+    z-index: 3;
+}
+
+.hbDpBox li .hblistTip p a {
+    height: 34px;
+    text-align: left;
+    padding-left: 11px;
+    width: 77px;
+}
+
+.hbDpBox li .hblistTip p a:hover {
+    background: #fff;
+    cursor: pointer;
+    color: #b81c22;
+}
+
+.listC {
+    width: 1200px;
+    /* overflow: hidden; */
+}
+
+.listC li {
+    float: left;
+    margin: 0px 9px 20px 0px;
+    /* display: inline; */
+    width: 231px;
+}
+
+.listC li .imgBox {
+    width: 230px;
+    height: 230px;
+    /* z-index: 0; */
+    position: relative;
+    /* text-align: center; */
+}
+
+.imgBox img {
+    width: 230px;
+    height: 230px;
+    /* z-index: -5; */
+}
+
+.imgBox .tehui {
+    background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat 0px -841px transparent;
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: "arial";
+    font-size: 16px;
+    height: 25px;
+    padding: 18px 0 2px 6px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 40px;
+    text-indent: -5px;
+}
+
+.imgBox .details {
+    bottom: 4px;
+    height: 400px;
+    position: absolute;
+    width: 300px;
+    left: 230px;
+    top: 0px;
+    z-index: 2;
+    background: #ccc;
+    display: none;
+}
+
+.listC li .p1 {
+    margin-top: 10px;
+    padding: 0px 3px 5px;
+    line-height: 20px;
+    text-align: center;
+    height: 38px;
+    overflow: hidden;
+}
+
+.p1 a {
+    color: #727171;
+    font-size: 12px;
+}
+
+.listC li .p2 {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.p2 span {
+    padding: 0px 3px 5px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #b81c22;
+    font-weight: bold;
+}
+
+.p2 b {
+    font-weight: bold;
+    text-decoration: line-through;
+    color: #b81c22;
+}
+
+.searchPage20111226 {
+    display: inline;
+    float: right;
+}
+
+.pageGGsub20111226 {
+    float: right;
+    width: 49px;
+    height: 26px;
+    border: none;
+    border: 0;
+    margin-left: 10px;
+    background: url(http://i.vanclimg.com/search/sprites_20130606.png) no-repeat scroll 0px -2044px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.searchPage20111226 strong {
+    float: right;
+    margin-top: 6px;
+}
+
+em,
+strong,
+th {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.pageGGshuru20111226 {
+    float: right;
+    width: 26px;
+    height: 24px;
+    border: 1px solid #ededed;
+    line-height: 24px;
+    text-align: center;
+    margin: 0px 4px;
+    /* vertical-align: middle; */
+}
+
+.allpagesNumber20111226 {
+    float: right;
+    display: inline-block;
+    margin: 6px 10px 0px;
+}
+
+.searchPage20111226 span {
+    display: inline;
+    float: right;
+    padding-top: 6px;
+    cursor: pointer;
+}
+
+.searchPage20111226 ul {
+    display: inline;
+    float: right;
+    margin-right: 5px;
+    padding-top: 2px;
+}
+
+.searchPage20111226 .currentpage20111226 {
+    color: #FFFFFF;
+    font-weight: bold;
+    background: #b81c22;
+    width: 26px;
+    line-height: 24px;
+    height: 24px;
+    border: 1px solid #ededed;
+}
+
+.searchPage20111226 li {
+    display: inline;
+    float: left;
+    margin-left: 7px;
+    text-align: center;
+}
+
+#bottompageindex {
+    padding-top: 2px;
+}
+
+.listC li .current {
+    border: red 1px solid;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.imgBox .active2 {
+    display: block;
+}
+
+.imgBox .details img {
+    width: 250px;
+    margin-left: 25px;
+    height: 260px;
+}
+
+.imgBox .details .p11,
+.imgBox .details .p22 {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.imgBox .details .p22 {
+    text-align: left;
+    /* padding-left:25px; */
+    margin: 10px 0 20px 25px;
+}
+
+.imgBox .details .p33 span:nth-child(1) {
+    float: left;
+    margin-left: 25px;
+    font-size: 16px;
+    color: red;
+    font-weight: 900;
+}
+
+.imgBox .details .p33 span:nth-child(2) {
+    float: right;
+    margin-right: 55px;
+    color: red;
+}
+
+.imgBox .details h3 {
+    margin-top: 20px;
+    margin-left: 30px;
+    position: absolute;
+    right: 40px;
+    font-size: 30px;
+    color: red;
+}
+
+.imgBox .active2 {
+    display: block;
+}

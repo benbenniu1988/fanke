@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.mainT {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #808080;
+}
+
+.mainT h2 {
+    margin-left: 10px;
+    float: left;
+    margin-right: 10px;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mainT ul {
+    float: right;
+    overflow: hidden;
+}
+
+.mainT ul li {
+    float: left;
+    color: #808080;
+    height: 45px;
+    margin: 0 10px 0 0;
+}
+
+.mainT ul li a {
+    display: inline-block;
+    padding: 0px 15px 0px 0px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #808080;
+}
+
+.details {
+    margin-top: 30px;
+}
+
+.dL {
+    width: 634px;
+    float: left;
+    /* height: 426px; */
+    /* overflow: hidden; */
+}
+
+.dL .dl1 {
+    height: 449;
+    width: 72px;
+}
+
+.dl1 .up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    margin-left: 30px;
+}
+
+.dl1 .down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.dl1,
+.imgBox {
+    float: left;
+}
+
+
+
+.dL .imgSBox {
+    height: 100%;
+}
+
+.dL .imgSBox li {
+    width: 72px;
+    height: 72px;
+    margin-top: 11px;
+
+}
+
+.dL .imgSBox li img {
+    width: 72px;
+    height: 72px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+
+.imgBox {
+    width: 400px;
+    height: 400px;
+    margin: 20px 80px 0 80px;
+    position: relative;
+}
+
+.imgBox img {
+    width: 400px;
+    height: 400px;
+}
+
+.shadow {
+    width: 220px;
+    height: 200px;
+    opacity: .5;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.imgHBox2 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 420px;
+    top: -50px;
+    display: none;
+    overflow: hidden;
+
+}
+
+.imgHBox2 img {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+}
+
+.active {
+    display: block;
+}
+
+.dR {
+    float: left;
+    width: 566px;
+    overflow: hidden;
+    height: 367px;
+    /* background: pink; */
+}
+
+.dRT {
+    overflow: hidden;
+}
+
+.dRT span {
+    float: left;
+    line-height: 26px;
+    height: 26px;
+    font-size: 14px;
+    color: #A10000;
+    margin-top: 6px;
+
+}
+
+.dRT b {
+    float: left;
+    font-size: 24px;
+    color: #A10000;
+}
+
+.dRT a {
+    float: left;
+    height: 26px;
+    display: inline-block;
+    margin-left: 20px;
+    line-height: 26px;
+    margin-top: 8px;
+    color: #a10000;
+    font-size: 12px;
+}
+
+.color {
+    margin-top: 10px;
+    width: 561px;
+    height: 50px;
+}
+
+.color .color1 {
+    font-size: 12px;
+    line-height: 18px;
+    float: left;
+    color: #666666;
+}
+
+.color .color2 {
+    float: left;
+}
+
+.color2 li {
+    float: left;
+    border: 1px solid #cbcbcb;
+    box-sizing: border-box;
+    width: 97px;
+    height: 42px;
+    cursor: pointer;
+    margin: 0px 8px 8px 0px;
+}
+
+.color2 li img {
+    width: 36px;
+    height: 36px;
+    float: left;
+}
+
+.color2 li span {
+    color: #666;
+    display: inline;
+    float: left;
+    line-height: 16px;
+    margin-left: 6px;
+    padding-top: 4px;
+    width: 46px;
+    overflow: hidden;
+    height: 34px;
+    font-size: 12px;
+}
+
+.size {
+    width: 561px;
+    height: 32px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-top: 12px;
+}
+
+.size span {
+    float: left;
+    color: #666666;
+    line-height: 22px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.size1 li {
+    background: #FFFFFF;
+    border: 1px solid #C8C8C8;
+    color: #333333;
+    cursor: pointer;
+    padding: 0px;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 28px;
+    font-size: 12px;
+}
+
+.goods {
+    width: 561px;
+    height: 35px;
+}
+
+.goods span {
+    font-size: 12px;
+    color: #666666;
+    float: left;
+}
+
+.selectBox {
+    float: left;
+}
+
+#selectedCount {
+    height: 20px;
+    line-height: 20px;
+    width: 53px;
+    display: inline;
+    float: left;
+}
+
+.choose {
+    width: 400px;
+    height: 22px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.choosed,
+.chooseC {
+    font-size: 12px;
+    float: left;
+    color: #666666;
+    line-height: 22px;
+    height: 22px;
+    padding-bottom: 10px;
+}
+
+.chooseC {
+    font-weight: bold;
+}
+
+.youhuo {
+    color: #a10000;
+    margin-left: 15px;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.shoppingBox {
+    width: 349px;
+    height: 33px;
+}
+
+.buynow {
+    color: #333;
+    background: #F7ABAF;
+    width: 166px;
+    height: 31px;
+    display: block;
+    float: left;
+    margin-right: 13px;
+    border: solid 1px rgb(183, 27, 33);
+}
+
+.buynow span {
+    margin-left: 60px;
+    margin-top: 9px;
+    display: block;
+    font-size: 14px;
+    color: #A50309;
+}
+
+.add2car {
+    background: url(../imagesL1/ia_500000037.png) no-repeat scroll -147px -285px;
+    width: 168px;
+    height: 33px;
+    display: block;
+    float: left;
+}
+
+#promotion {
+    margin-top: 30px;
+}
+
+.danpin_YhTsBox {
+    width: 400px;
+    height: auto;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #A20000;
+    border-top: 1px solid #A20000;
+}
+
+.danpin_YhTsTab h4 {
+    height: 4px;
+    line-height: 14px;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.danpin_YhTsTab h4 span {
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    background: #ffffff;
+    position: absolute;
+    left: 167px;
+    top: -4px;
+    padding: 0 8px;
+    color: #A20000;
+}
+
+.danpin_YhTsBox ul li {
+    /* padding-left: 15px; */
+    line-height: 24px;
+    color: #666666;
+    font-size: 12px;
+    /* background: url(//i1.vanclimg.com/item/sprite0725.png) no-repeat scroll -372px -316px; */
+}

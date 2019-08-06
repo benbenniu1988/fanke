@@ -71,7 +71,7 @@ class Headers {
             };
 
             let html1 = items1.nav2.map((items2) => {
-                return `<li><a href='#'>${items2}</a></li>`
+                return `<li><a href='${items2=="空调衫"?"../html/listpage.html":""}'>${items2}</a></li>`
             }).join("");
             let oUl2 = $("<ul></ul>").addClass("nav2").html(html1);
             olis1.append(oUl2);

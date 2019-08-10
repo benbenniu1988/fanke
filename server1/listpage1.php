@@ -10,13 +10,13 @@ $orderType = $_REQUEST["orderType"];
 if($orderType == 0)
 {
   # 获取所有的商品信息
-  $sql = "SELECT * FROM `goodslist` order by `id` limit $page , 10";
+  $sql = "SELECT * FROM `goodsdata` order by `id` limit $page , 10";
 }else if($orderType == 2)
 {
-  $sql = "SELECT * FROM `goodslist` ORDER BY `goodslist`.`talk` DESC limit $page , 10";
+  $sql = "SELECT * FROM `goodsdata` ORDER BY `goodsdata`.`talk` DESC limit $page , 10";
 }else if($orderType == 4)
 {
-  $sql = "SELECT * FROM `goodslist` ORDER BY `goodslist`.`price1` ASC limit $page , 10";
+  $sql = "SELECT * FROM `goodsdata` ORDER BY `goodsdata`.`price1` ASC limit $page , 10";
 }
 
 

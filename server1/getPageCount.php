@@ -2,8 +2,8 @@
     # 先连接数据库
 $con = mysqli_connect("127.0.0.1", "root", "", "fanke");
 
-# 查询数据库中商品的总数量(103)
-$sql = "SELECT * FROM goodslist";
+
+$sql = "SELECT * FROM goodsdata";
 $result = mysqli_query($con, $sql);
 $ListCount = mysqli_num_rows($result);
 

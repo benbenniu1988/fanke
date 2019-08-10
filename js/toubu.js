@@ -61,7 +61,7 @@ class Headers {
         let oUl1 = $("<ul></ul>").addClass("nav1");
 
         this.data.forEach((items1) => {
-            olis1 = $("<li></li>").html($("<a href='#'></a>").html(items1.nav1)).attr("data-class", `${items1.nav3}`);
+            olis1 = $("<li></li>").html($("<a href='../html/shouye.html'></a>").html(items1.nav1)).attr("data-class", `${items1.nav3}`);
             if (olis1.attr("data-class") == "new") {
                 olis1.css("background", "url(../images/new.png) no-repeat 64px 17px");
             } else if (olis1.attr("data-class") == "hot") {
@@ -102,7 +102,7 @@ class Headers {
                                         <input type="button" class="btn">
                                     </div>
                                     <div class="shoppingCar">
-                                        <a href="#">购物车<span> (0) </span></a>
+                                        <a href="../html/shoppingCar.html">购物车<span> (0) </span></a>
                                         <div class="carList"></div>
                                     </div>
                                     <ul class="hotList">
@@ -130,7 +130,7 @@ class Headers {
         console.log(username);
         if (username) {
             $(".headerTopLeft").empty();
-            $(".headerTopLeft").append($("<span></span>").html(`你好 ${username} 欢迎光临`)).append($("<a href='' class='logout'></a>").html("登出"))
+            $(".headerTopLeft").append($("<span></span>").html(`你好 ${username} 欢迎光临，`)).append($("<a href='' class='logout'></a>").html("登出"))
         }
 
         $(".headerNav").append(oUl1);

@@ -12,9 +12,9 @@ $(function () {
             url: "../server1/listpage1.php",
             success(res) {
                 let html = res.data.map(items => {
-                    return `<li data-id="${items.id}">
+                    return `<li data-title="${items.title}">
                                 <div class="imgBox">
-                                    <a href=""><img src="../imagesL1/${items.srcB}" alt=""></a>
+                                    <a href="../html/details.html?${items.id}&${items.title}"><img src="../imagesL1/${items.srcB}" alt=""></a>
                                     <div class="tehui">${items.price1}</div>
                                     <div class="details">
                                         <img src="../imagesL1/${items.srcB}" alt="">
@@ -94,7 +94,7 @@ $(function () {
 
     $(".listC").on("mouseenter", "li", function (e) {
         // console.log(this);
-        
+
         $(this).children(".imgBox").addClass("current").parent().siblings().children(".imgBox").removeClass("current");
         // $(this).children(".imgBox").children(".details").addClass("active2").parents("li").siblings().children(".imgBox").children(".details").removeClass("active2");
         // // let left = e.offsetX;
@@ -107,11 +107,13 @@ $(function () {
         $(this).children("li").children(".imgBox").removeClass("current");
     });
 
-    $(".searchBox1").on("click", "li", function (e) {
+    $(".searchCol").on("click", "li", function (e) {
         e.preventDefault();
         let index = $(this).index();
         orderType = index;
-        // console.log(orderType);
+        console.log(orderType);
         getData(0);
     });
+
+
 });

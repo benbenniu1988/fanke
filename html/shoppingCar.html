@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/shoppingCar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/store.min.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/shoppingCar.js"></script>
+</head>
+
+<body>
+    <div class="shoppingCar">
+        <div class="content">
+            <div class="header">
+                <a href="../html/shouye.html" class="aImg"><img src="../imagesL1/vancl-logo.png" alt=""></a>
+                <div class="help">
+                    <a href="http://help.vancl.com/" target="_blank">帮助中心</a>
+                </div>
+                <div class="account">
+                    <p class="welcome"><span>您好，欢迎光临凡客诚品。</span><a class="login"
+                            href="../html/login.html">登录</a>|<a class="reg"
+                            href="../html/registe.html">注册</a></p>
+                </div>
+            </div>
+            <div class="location">
+                <em>1.我的购物车</em><span>2.填写核对信息单</span><span>3.成功提交订单</span>
+            </div>
+            <div class="main">
+                <div class="empty">
+                    您的购物车中没有商品，请您先<a href="../html/shouye.html">选购商品»</a>
+                </div>
+                <div id="cart-gift">
+                    <div class="cart-top">
+                        <!-- 2015.07.31 shopping改版 -->
+                        <h2>我的购物车</h2>
+                    </div>
+                    <div class="tip">
+                        <span>温馨提示：</span>1.选购清单中的商品无法保留库存，请您及时结算。2.商品的价格和库存将以订单提交时为准。3.促销活动满减优惠将均摊至商品小计中。
+                    </div>
+                    <div id="cart">
+                    </div>
+                    <div id="cart-product" class="clearfix" data-jobs-alert="False" data-promotion="False">
+                        <div id="batchdelcart">
+                            <table cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th class="title-white bd-left">
+                                            &nbsp;
+                                        </th>
+                                        <th class="bar-title ">
+                                            <input id="all-ckb-top" type="checkbox" class="track all-products-ckb ckb"
+                                                name="all-products" value="all-products" data-del-tip=""><label
+                                                for="all-ckb-top">全选</label>
+                                        </th>
+                                        <th class="image">
+                                            &nbsp;
+                                        </th>
+                                        <th class="name">
+                                            商品名称
+                                        </th>
+                                        <th class="size">
+                                            尺寸
+                                        </th>
+                                        <th class="presentpoints" style="display:none">
+                                            积分
+                                        </th>
+                                        <th class="price">
+                                            单价
+                                        </th>
+                                        <th class="qty">
+                                            数量
+                                        </th>
+                                        <th class="discount">
+                                            优惠
+                                        </th>
+                                        <th class="subtotal">
+                                            小计
+                                        </th>
+                                        <th class="operate ">
+                                            操作
+                                        </th>
+                                        <th class="title-white bd-right">
+                                            &nbsp;
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="vancl-title" style="display:none">
+                                    <tr>
+                                        <td class="white bd-left">
+                                            &nbsp;
+                                        </td>
+                                        <td colspan="9" class="vancl-title-bottom">
+                                            <p class="vancl-title-left">
+                                                <input id="vancl-ckb-top" type="checkbox" name="vancl-products"
+                                                    value="shippers">
+                                                以下商品由凡客诚品负责配送
+                                            </p>
+                                            <div class="vancl-title-right pos-r">
+                                                <p>
+                                                    您再买<span id="transfer-tip">￥<em>43.00</em></span>即可享免运费，
+                                                    <a href="/mycart/collocate" data="43.00" id="collocate"
+                                                        class="collocate-btn track" name="sp_cart_mycar_collocate">
+                                                        立即凑单</a>
+                                                </p>
+                                            </div>
+                                        </td>
+                                        <td class="white bd-right">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody style="display:none">
+                                    <tr>
+                                        <td class="white bd-left">
+                                            &nbsp;
+                                        </td>
+                                        <td colspan="9">
+                                            <p class="shop-name-left">
+                                                <input id="vancl-ckb-shop-10258" type="checkbox" name="products-shop"
+                                                    value="products-shop" shopid="10258" issupplier="False">
+                                                店铺：
+                                                <a href="http://mall.vancl.com/10258/" target="_blank">VANCL 凡客诚品旗舰店</a>
+                                            </p>
+                                        </td>
+                                        <td class="white bd-right">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody id="vancl-general-product" name="vancl-general-product">
+                                </tbody>
+                                <tbody id="supplier-general-product_tb" class="tbody1"
+                                    name="supplier-general-product_tb">
+                                    <!-- <tr class="empty11">
+                                        <td class="white bd-left bd-bottom">
+                                            &nbsp;
+                                        </td>
+                                        <td class="bar bd-bottom" rowspan="1" colspan="6">
+                                        </td>
+                                        <td class="bd-bottom">
+                                        </td>
+                                        <td class="subtotal bd-bottom">
+                                        </td>
+                                        <td class="operate bd-bottom">
+                                        </td>
+                                        <td class="white bd-right bd-bottom">
+                                        </td>
+                                    </tr> -->
+                                    <!-- <div class="selectBox"> -->
+                                    <!-- 第一个商品 -->
+                                    <!-- <tr class="selected">
+                                        <td class="white bd-left">
+                                            &nbsp;
+                                        </td>
+                                        <td class="bar" rowspan="1">
+                                            <input type="checkbox" class="track ckb" name="p-item">
+                                        </td>
+                                        <td class="image" rowspan="1">
+                                            <a target="_blank" href="">
+                                                <img alt="凡客空调衫 镂空短袖套衫 女款 西瓜红色"
+                                                    src="https://ssl.vanclimg.com/48/product/6/3/7/6374359/big/6374359-1j201706172249534728.jpg"></a>
+                                        </td>
+                                        <td class="name">
+                                            <a target="_blank" href="" title="凡客空调衫 镂空短袖套衫 女款 西瓜红色">
+                                                凡客空调衫 镂空短袖套衫 女款 西瓜红色<br>
+                                            </a>
+                                            <div style="float: right; width: 36%">
+                                            </div>
+                                        </td>
+                                        <td class="size">
+                                            <a target="_blank" title="L">
+                                                L
+                                            </a>
+                                        </td>
+                                        <td class="presentpoints" style="display: none">
+                                            78分
+                                        </td>
+                                        <td class="price">
+                                            ￥78.00
+                                        </td>
+                                        <td class="qty">
+                                            <div class="qtyBox">
+                                                <b>-</b>
+                                                <input type="text" value="1">
+                                                <b>+</b>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                        <td class="subtotal">
+                                            ￥78.00
+                                        </td>
+                                        <td class="operate">
+                                            <a class="del track" name="sp_cart_mycart_del" href="">
+                                                删除</a>
+                                        </td>
+                                        <td class="white bd-right">
+                                            &nbsp;
+                                        </td>
+                                    </tr> -->
+
+                                    <!-- 第二个商品 -->
+                                    <!-- <tr class="selected">
+                                        <td class="white bd-left">
+                                            &nbsp;
+                                        </td>
+                                        <td class="bar" rowspan="1">
+                                            <input type="checkbox" class="track ckb" name="p-item" data-del-tip=""
+                                                value="" checked="checked" issupplier="False" shopid="10258"
+                                                selectedclothescode="15766079">
+                                        </td>
+                                        <td class="image" rowspan="1">
+                                            <a target="_blank"
+                                                href="http://item.vancl.com/6374358.html?ref=s-s-k_rs__653f06f9f78c4527a3e2c73f7c24ddcd_50405b91d72329db-1_6-6374358_Sort01_qb_000-v|hp-hp-head-nav_6-1-v:n">
+                                                <img alt="凡客空调衫 镂空短袖套衫 女款 黑色"
+                                                    src="https://ssl.vanclimg.com/48/product/6/3/7/6374358/big/6374358-1j201706172249534728.jpg"></a>
+                                        </td>
+                                        <td class="name">
+                                            <a target="_blank"
+                                                href="http://item.vancl.com/6374358.html?ref=s-s-k_rs__653f06f9f78c4527a3e2c73f7c24ddcd_50405b91d72329db-1_6-6374358_Sort01_qb_000-v|hp-hp-head-nav_6-1-v:n"
+                                                title="凡客空调衫 镂空短袖套衫 女款 黑色">
+                                                凡客空调衫 镂空短袖套衫 女款 黑色
+                                            </a>
+                                            <div style="float: right; width: 36%">
+                                            </div>
+                                        </td>
+                                        <td class="size">
+                                            <a target="_blank" title="M">
+                                                M
+                                            </a>
+                                        </td>
+                                        <td class="presentpoints" style="display: none">
+                                            78分
+                                        </td>
+                                        <td class="price">
+                                            ￥78.00
+                                        </td>
+                                        <td class="qty">
+                                            <div class="qtyBox">
+                                                <b>-</b>
+                                                <input type="text" value="1">
+                                                <b>+</b>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                        <td class="subtotal">
+                                            ￥78.00
+                                        </td>
+                                        <td class="operate">
+                                            <a class="del track" name="sp_cart_mycart_del"
+                                                href="/mycart/deleteitem?sku=15766079">
+                                                删除</a>
+                                        </td>
+                                        <td class="white bd-right">
+                                            &nbsp;
+                                        </td>
+                                    </tr> -->
+
+
+                                    <!-- </div> -->
+                                </tbody>
+
+
+                                <tbody id="vancl-point-product" name="vancl-point-product">
+
+                                </tbody>
+                                <tbody id="vancl-present-product" name="vancl-present-product">
+
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td class="white bd-left table-bottom table-bottom-td">
+                                            &nbsp;
+                                        </td>
+                                        <td colspan="9" class="table-bottom table-bottom-td">
+                                            &nbsp;
+                                        </td>
+                                        <td class="white bd-right table-bottom table-bottom-td">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="bar-empty clearfix">
+                            </div>
+                            <div id="bar-summary" class="bar-summary clearfix" style="top: 0px;">
+                                <div class="bar">
+                                    <input id="all-ckb-bt" type="checkbox" name="all-products" value="all-products"
+                                        class="track all-products-ckb ckb" data-del-tip=""><label
+                                        for="all-ckb-bt">全选</label>
+                                    <a href="javascript:;" class="batch-del-cart track"
+                                        name="sp_cart_mycar_batch_clear">
+                                        删除</a>
+                                    <span>数量总计：<em class="count"></em>件</span>
+                                    <span>
+                                        <em>
+                                        </em>
+                                    </span>
+                                </div>
+                                <div class="summary">
+
+                                    产品金额总计(不含运费)：￥<span class="amount"></span>
+
+                                </div>
+                                <div class="btn-panel">
+                                    <a href="/mycart/continuetobuy" class="go-buy track" name="sp_cart_mycar_goBuy">
+                                        &lt;&lt;继续购物</a> <a class="checkout track" href="/checkout?previousUserId=-1"
+                                        id="sp_cart_mycar_goPay" name="sp_cart_mycar_goPay">
+                                        去结算&gt;&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="/collocate.ashx?p=hitshowcount" style="display: none">
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+</body>
+
+</html>

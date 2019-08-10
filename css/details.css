@@ -15,7 +15,7 @@ a {
 .main {
     width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .mainT {
@@ -146,7 +146,7 @@ a {
     top: -50px;
     display: none;
     overflow: hidden;
-
+    z-index: 2;
 }
 
 .imgHBox2 img {
@@ -162,9 +162,9 @@ a {
 .dR {
     float: left;
     width: 566px;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 367px;
-    /* background: pink; */
+    position: relative;
 }
 
 .dRT {
@@ -223,6 +223,7 @@ a {
     height: 42px;
     cursor: pointer;
     margin: 0px 8px 8px 0px;
+    box-sizing: border-box;
 }
 
 .color2 li img {
@@ -248,7 +249,6 @@ a {
     width: 561px;
     height: 32px;
     overflow: hidden;
-    margin-bottom: 15px;
     margin-top: 12px;
 }
 
@@ -373,6 +373,7 @@ a {
     padding-bottom: 10px;
     border-bottom: 1px solid #A20000;
     border-top: 1px solid #A20000;
+    z-index: -2;
 }
 
 .danpin_YhTsTab h4 {
@@ -393,6 +394,7 @@ a {
     top: -4px;
     padding: 0 8px;
     color: #A20000;
+    z-index: 0;
 }
 
 .danpin_YhTsBox ul li {
@@ -401,4 +403,249 @@ a {
     color: #666666;
     font-size: 12px;
     /* background: url(//i1.vanclimg.com/item/sprite0725.png) no-repeat scroll -372px -316px; */
+}
+
+.tips {
+    border: 1px solid #CC9998;
+    width: 170px;
+    height: 20px;
+    margin-left: 36px;
+    *margin-top: 5px;
+    line-height: 19px;
+    text-align: center;
+    color: #999999;
+    clear: both;
+    margin-bottom: 5px;
+    font-size: 12px;
+    display: none;
+}
+
+.tips span {
+    background-image: url(//i1.vanclimg.com/item/sprite0725.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 16px;
+    display: block;
+    width: 16px;
+    background-position: -1911px 0pt;
+    margin: 2px;
+    float: left;
+}
+
+.tip p {
+    color: #a10000;
+}
+
+.tipsBox {
+    width: 170px;
+    height: 22px;
+    margin-bottom: 5px;
+}
+
+.dL .imgSBox .cur {
+    border: 1px solid #a10000;
+}
+
+.color .color2 .cur1 {
+    border: 2px solid #a10000;
+}
+
+.size1 .active1 {
+    border: 1px solid #a10000;
+}
+
+.carbox {
+    position: absolute;
+    width: 498px;
+    height: 200px;
+    background: #FFFFFF;
+    padding-bottom: 70px;
+    top: 245px;
+    left: 0;
+    overflow: hidden;
+    border: 1px solid #b81b22;
+    display: none;
+}
+
+.carbox h2 {
+    height: 42px;
+    background: #b81b22;
+    width: 100%;
+    font-weight: normal;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.carbox h2 span {
+    padding-left: 30px;
+    line-height: 42px;
+    font-size: 16px;
+    color: #ffffff;
+    float: left;
+}
+
+.CarBox_Title span.close1 {
+    padding-left: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-top: 13px;
+    margin-right: 27px;
+    cursor: pointer;
+    background: url(http://i2.vanclimg.com/cms/20150227/vanclsprite.png) no-repeat scroll -369px -113px;
+    float: right;
+}
+
+.CarBox_Content {
+    height: 95px;
+    margin: 0px 28px;
+    border-bottom: 1px dotted #727171;
+}
+
+.CarBox_bg {
+    width: 74px;
+    height: 74px;
+    padding-right: 18px;
+    background: url(http://i2.vanclimg.com/cms/20150227/vanclsprite.png) no-repeat scroll -237px -119px;
+    float: left;
+}
+
+.CarBox_NumPrice {
+    width: 180px;
+    height: auto;
+    float: left;
+}
+
+.line01 {
+    display: block;
+    width: 1px;
+    height: 36px;
+    line-height: 0px;
+    font-size: 0px;
+    margin-top: 19px;
+    margin-right: 15px;
+    background: #b81c22;
+    overflow: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.CarBox_NumPrice div {
+    width: 120px;
+    height: auto;
+    width: 158px;
+}
+
+.CarBox_NumPrice p,
+.CarBox_NumPrice p span {
+    line-height: 22px;
+}
+
+.CarBox_NumPrice p span {
+    margin: 0px 3px;
+    display: block;
+    float: left;
+    line-height: 22px;
+    font-size: 14px;
+    color: #000000;
+}
+
+#shopcarcount {
+    color: #b81c22;
+}
+
+.CarBox_MainDragDrop {
+    cursor: pointer;
+}
+
+.CarBox_NumPrice .CarBox_TotialPrice span {
+    margin: 0px;
+    font-size: 14px;
+    float: left;
+}
+
+#shopcarprice {
+    color: #b81c22;
+}
+
+.CarBox_Btn {
+    padding-top: 19px;
+}
+
+.CarBox_Btn,
+.CarBox_goCar,
+.CarBox_nowCheckout,
+.CarBox_continueShopping {
+    float: right;
+}
+
+.CarBox_nowCheckout,
+.CarBox_goCar {
+    border: none;
+    height: 32px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 32px;
+}
+
+.CarBox_nowCheckout a:link,
+.CarBox_nowCheckout a:visited,
+.CarBox_nowCheckout a:hover,
+.CarBox_goCar a:link,
+.CarBox_goCar a:visited,
+.CarBox_goCar a:hover {
+    background: #b81c22;
+    color: #ffffff;
+}
+
+.CarBox_nowCheckout {
+    width: 80px;
+    background: url(//i1.vanclimg.com/item/sprite0725.png) no-repeat scroll -1783px -211px;
+}
+
+.CarBox_nowContinueBuy a:link,
+.CarBox_nowContinueBuy a:visited,
+.CarBox_nowContinueBuy a:hover {
+    background: #efefef;
+    color: #727171;
+}
+
+.CarBox_nowCheckout a {
+    display: inline-block;
+    height: 32px;
+    width: 84px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.CarBox_goCar a {
+    display: inline-block;
+    height: 32px;
+    width: 82px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+    margin-left: 8px;
+    width: 82px;
+}
+
+.blank5 {
+    clear: both;
+    display: block;
+    font-size: 1px;
+    overflow: hidden;
+    height: 5px;
+}
+
+.current {
+    display: block;
 }
